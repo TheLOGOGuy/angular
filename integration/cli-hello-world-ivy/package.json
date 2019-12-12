@@ -9,7 +9,9 @@
     "ng": "ng",
     "postinstall": "webdriver-manager update --gecko false --standalone false $CHROMEDRIVER_VERSION_ARG && yarn ivy-ngcc",
     "start": "ng serve",
-    "test": "ng build --progress false"
+    "test": "ng build --progress false",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +26,8 @@
     "@angular/router": "file:../../dist/packages-dist/router",
     "core-js": "file:../../node_modules/core-js",
     "rxjs": "file:../../node_modules/rxjs",
-    "zone.js": "file:../../node_modules/zone.js"
+    "zone.js": "file:../../node_modules/zone.js",
+    "snyk": "^1.258.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.5.0",
@@ -46,5 +49,6 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "file:../../node_modules/typescript"
-  }
+  },
+  "snyk": true
 }
