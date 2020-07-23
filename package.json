@@ -35,7 +35,7 @@
   "dependencies": {
     "@angular-devkit/schematics": "^0.5.5",
     "@bazel/typescript": "0.20.3",
-    "@schematics/angular": "^0.5.4",
+    "@schematics/angular": "^8.3.29",
     "@types/chokidar": "1.7.3",
     "@types/convert-source-map": "^1.5.1",
     "@types/diff": "^3.2.2",
