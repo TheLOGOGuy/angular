@@ -12,9 +12,9 @@
   },
   "typings": "./src/ngc-wrapped/index.d.ts",
   "dependencies": {
-    "@bazel/typescript": "^0.20.3",
+    "@bazel/typescript": "^5.5.1",
     "@types/node": "6.0.84",
-    "shelljs": "0.8.2",
+    "shelljs": "0.8.5",
     "tsickle": "0.32.1"
   },
   "peerDependencies": {
